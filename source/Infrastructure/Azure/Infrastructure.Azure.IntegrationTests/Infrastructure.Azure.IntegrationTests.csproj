@@ -109,13 +109,6 @@
     <Compile Include="TopicSenderIntegration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Settings.xml">
-      <Link>Settings.xml</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\..\CQRS-journey.licenseheader">
       <Link>CQRS-journey.licenseheader</Link>
     </None>
@@ -131,6 +124,9 @@
       <Project>{56A53790-2571-4EA6-8742-2FA00E893B21}</Project>
       <Name>Infrastructure.Azure</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Settings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="BeforeBuild">

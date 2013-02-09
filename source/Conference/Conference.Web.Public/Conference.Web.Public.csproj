@@ -223,6 +223,7 @@
     <Content Include="Content\Conference\sponsors.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Settings.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -276,13 +277,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Conference\Display.cshtml" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)|$(Platform)' != 'DebugLocal|AnyCPU' ">
-    <Content Include="..\..\Infrastructure\Azure\Settings.xml">
-      <Link>Settings.xml</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\Azure\Infrastructure.Azure\Infrastructure.Azure.csproj">

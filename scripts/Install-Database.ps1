@@ -25,7 +25,7 @@
 [CmdletBinding(DefaultParameterSetName="WindowsAuthentication")]
 param (
 # The database server name. The default value is '.\SQLEXPRESS'.
-    [string] $ServerName = ".\SQLEXPRESS",
+    [string] $ServerName = ".\DB12_DEV",
 # The database name. The default value is 'conference'.
     [string] $DatabaseName = "conference",
 # Does not create the database in addition to the database objects
